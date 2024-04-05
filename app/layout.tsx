@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Another Todo App",
@@ -27,7 +28,8 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        {children}
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
