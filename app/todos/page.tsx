@@ -17,3 +17,8 @@ const TodosPage = async () => {
 };
 
 export default TodosPage;
+
+export const dynamic = "auto",
+  dynamicParams = true,
+  revalidate = 0,
+  fetchCache = "auto";
